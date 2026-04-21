@@ -962,6 +962,11 @@ _MULTIMODAL_EXAMPLE_MODELS = {
         "internlm/Intern-S1-Pro",
         trust_remote_code=True,
     ),
+    "InternS2PreviewForConditionalGeneration": _HfExamplesInfo(
+        "internlm/InternS2Preview",
+        trust_remote_code=True,
+        is_available_online=False,
+    ),
     "InternVLChatModel": _HfExamplesInfo(
         "OpenGVLab/InternVL2-1B",
         extras={
