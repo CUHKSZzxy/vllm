@@ -989,7 +989,7 @@ _MULTIMODAL_EXAMPLE_MODELS = {
         trust_remote_code=True,
     ),
     "InternS2PreviewForConditionalGeneration": _HfExamplesInfo(
-        "internlm/InternS2Preview",
+        "internlm/Intern-S2-Preview",
         trust_remote_code=True,
         is_available_online=False,
     ),
