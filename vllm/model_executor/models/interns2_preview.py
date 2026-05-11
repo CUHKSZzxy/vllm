@@ -21,11 +21,7 @@ class InternS2PreviewProcessingInfo(Qwen3VLProcessingInfo):
         return self.ctx.get_hf_config()
 
     def get_hf_processor(self, **kwargs: object) -> AutoProcessor:
-        return AutoProcessor.from_pretrained(
-            self.ctx.model_config.model,
-            trust_remote_code=True,
-            **kwargs,
-        )
+        return self.ctx.get_hf_processor(**kwargs)
 
 
 @MULTIMODAL_REGISTRY.register_processor(
